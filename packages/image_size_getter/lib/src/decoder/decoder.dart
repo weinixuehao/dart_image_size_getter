@@ -112,7 +112,7 @@ mixin SimpleTypeValidator on BaseDecoder {
       footer,
       simpleFileHeaderAndFooter.endBytes,
     );
-    return headerEquals && footerEquals;
+    return headerEquals || footerEquals;
   }
 }
 
